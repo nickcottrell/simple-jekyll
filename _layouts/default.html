@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<title>simple jekyll : {{ page.title }}</title>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link href="{{ site.baseurl }}css/base.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div id="wrap">
+			
+<header>
+	<h1>Simple Jekyll.</h1>
+</header>
+
+{% include nav1.textile %}
+
+<div id="content">
+		
+{{ content }}
+		
+</div><!--end #content-->
+</div><!--end #wrap-->
+
+{% include footer.textile %}
+
+</body>
+</html>
